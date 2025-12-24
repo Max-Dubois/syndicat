@@ -15,7 +15,7 @@ body::before {
     background-repeat: no-repeat;
     background-position: center;
     background-size:50%; 
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 #countdown { 
@@ -47,5 +47,6 @@ body::before {
     font-size: 60px;
 
 }
+
 
 
