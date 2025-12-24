@@ -1,0 +1,48 @@
+body { 
+    text-align: center; 
+    font-family: sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    z-index: -1; 
+    background-image: url('./logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%; 
+    opacity: 0.3;
+}
+
+#countdown { 
+    font-size: 150px; 
+    color: #333; 
+    margin-top: 20px; 
+}
+
+.vote { 
+    font-size: 125px; 
+    margin-top: 0;
+}
+
+.rouge { 
+    color: #da3436; 
+}
+
+.blue { 
+    color: #6d81c6; 
+}
+
+.main{
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    font-weight: bolder;
+}
+
+.titre_urne{
+    font-size: 60px;
+}
