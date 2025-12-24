@@ -2,17 +2,27 @@
 <html>
 <head>
     <style>
-        body { text-align: center; font-family: sans-serif; background: #f4f4f4; }
-        img { max-width: 400px; margin-top: 50px; }
+        body { text-align: center; font-family: sans-serif;}
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1; 
+            
+            background-image: url('./logo.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:50%; 
+            opacity: 0.5; 
+        }
         #countdown { font-size: 150px; font-weight: bold; color: #333; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <img src="./logo.jpg" alt="Logo">
     <h1>OUVERTURE DES URNES</h1>
-    <h1>Syndicat Autonome - Centre Hospitalier de Lens</h1>
+    <h1>Votez Syndicat Autonome</h1>
     <div id="countdown"></div>
-
+    <h2>Un syndicat Apolitique, dynamique, toujours auprès des agents</h2>
     <script>
         const target = new Date("December 10, 2026 06:00:00").getTime();
         setInterval(function() {
